@@ -173,10 +173,21 @@ https://twitter.com/marco_bf
   <h1>happy birthday!</h1>
   <p>subu</p>
 </br>
-  <p><a href="https://drive.google.com/file/d/1u-pQ-bn8kZdDABM4KoKZEeYTqwtmIZpG/view?usp=sharing">now click here :)</a></p>
+  <p>wait for the cake.</p>
+</br>
+<p id="hidden-text" style="display: none; opacity: 0">then click<a href="https://drive.google.com/file/d/1u-pQ-bn8kZdDABM4KoKZEeYTqwtmIZpG/view?usp=sharing"> here</a> :)</p>
 </div>
 <!-- partial -->
   <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
 
+                      <script>
+                        setTimeout(function() {
+                          var elem = document.getElementById("hidden-text");
+                          elem.style.display = "inline-block";
+                          elem.style.transition = "opacity 1s ease-in-out";
+                          elem.style.opacity = 1;
+                        }, 7000);
+                      </script>
+                      
 </body>
 </html>
